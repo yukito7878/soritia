@@ -34,3 +34,60 @@
 	margin: 0;
 	margin-left: 10px;
 }
+
+/* タブレット対応（1024px以下） */
+@media (max-width: 1024px) {
+	.bugFreeClick {
+		width: 100%;
+		/* 画面幅に合わせる */
+		padding: 0 20px;
+		/* 余白を追加 */
+	}
+
+	.bugFreeClick-container {
+		width: 90%;
+		/* 幅を縮小 */
+	}
+
+	.bugFreeClick-text {
+		font-size: 1.8rem;
+		/* 文字サイズを少し小さく */
+	}
+
+	.bugFreeClick-hand {
+		width: 100px;
+		/* 手の画像を小さく */
+		right: 10px;
+	}
+}
+
+/* スマホ対応（768px以下） */
+@media (max-width: 768px) {
+	.bugFreeClick-container {
+		width: 100%;
+		/* 画面幅いっぱいに */
+		margin: 30px auto;
+		text-align: center;
+		/* 中央揃え */
+	}
+
+	.bugFreeClick-text {
+		font-size: 1.5rem;
+		/* 文字サイズを調整 */
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.bugFreeButton {
+		width: 90%;
+		/* ボタンのサイズを調整 */
+	}
+
+	.bugFreeClick-hand {
+		width: 80px;
+		/* 手の画像をさらに小さく */
+		right: 5px;
+		top: 55%;
+		/* 位置を調整 */
+	}
+}

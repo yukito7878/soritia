@@ -13,7 +13,7 @@
 	font-size: 5rem;
 	font-weight: bold;
 	margin-bottom: 1.5rem;
-	margin-top:0;
+	margin-top: 0;
 	color: black;
 }
 
@@ -166,27 +166,61 @@
 	line-height: 1.4;
 }
 
-/* レスポンシブデザイン */
-@media (max-width: 768px) {
-	.content-wrapper {
-		display: flex;
-		flex-direction: column;
-		/* 縦並びに変更 */
-		align-items: center;
-		gap: 2rem;
-		/* 縦方向の間隔を広げる */
+/* タブレット対応（1024px以下） */
+@media (max-width: 1024px) {
+	.review-container {
+		max-width: 95%;
+		padding: 0 10px;
+		/* 余白を追加 */
+	}
+
+	.review-title {
+		font-size: 4rem;
+		/* タイトルを少し小さく */
 	}
 
 	.review-slider {
 		max-width: 100%;
-		/* スライダーを全幅に拡大 */
+	}
+
+	.review-item {
+		padding: 2rem;
+		min-height: 280px;
+		/* 高さ調整 */
+	}
+
+	.review-item__customer {
+		width: 120px;
+		height: 120px;
+	}
+
+	.slider-button {
+		width: 35px;
+		height: 35px;
+	}
+}
+
+/* スマホ対応（768px以下） */
+@media (max-width: 768px) {
+	.content-wrapper {
+		flex-direction: column;
+		gap: 1.5rem;
+		/* 縦間隔を調整 */
+	}
+
+	.review-title {
+		font-size: 3rem;
+	}
+
+	.review-slider {
+		max-width: 100%;
 	}
 
 	.review-item {
 		padding: 1.5rem;
-		/* モバイル向けにパディングを調整 */
 		min-height: 250px;
-		/* 最小高さを調整 */
+		text-align: left;
+		/* 読みやすいように左寄せ */
 	}
 
 	.review-item__customer {
@@ -199,39 +233,37 @@
 	}
 
 	.review-heading {
-		margin: o.5rem 0;
+		margin: 0.5rem 0;
+		font-size: 1.2rem;
 	}
 
+	.review-text {
+		font-size: 1rem;
+		/* 小さめのフォント */
+	}
 
 	.review-extra {
 		width: 100%;
-		/* 右セクションを全幅に広げる */
 		text-align: center;
-		/* 中央揃え */
 	}
 
 	.thank-you {
 		font-size: 1.2rem;
-		/* モバイルで見やすいサイズ */
 		margin: 0.3rem auto;
 	}
 
 	.contact-button {
 		width: 100%;
-		/* ボタンを全幅に */
 		max-width: 300px;
-		/* ボタンの最大幅を設定 */
 		margin: 0.3rem auto;
 	}
 
 	.disclaimer {
 		font-size: 0.8rem;
-		/* 小さな画面用にフォントサイズ調整 */
 	}
 
 	.slider-button {
 		width: 30px;
 		height: 30px;
-		/* ボタンも小型化 */
 	}
 }
