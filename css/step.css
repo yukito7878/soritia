@@ -1,0 +1,98 @@
+.step-container {
+	display: flex;
+	justify-content: space-between;
+	/* 均等に並べる */
+	align-items: stretch;
+	/* 各ステップの高さを揃える */
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* 画面が小さいときは折り返す */
+	gap: 20px;
+	/* ステップ間の間隔 */
+	max-width: 1200px;
+	margin: auto;
+	margin-bottom: 100px;
+}
+
+.step{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #def0ff;
+}
+
+.step-box {
+	flex: 1;
+	/* 各ステップを均等に配置 */
+	min-width: 200px;
+	/* 4つで均等に並ぶように調整 */
+	text-align: center;
+	padding: 20px;
+	background: #fff;
+	border-radius: 10px;
+	margin: auto;
+	border: 2px solid black;
+	
+}
+
+.step-title{
+	max-width: 1200px;
+	width: 80%;
+	margin: auto;
+}
+
+.step h2 {
+	font-size: 22px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 10px 3px;
+	display: flex;
+	background-color: #ffe788;
+	border-radius: 5px;
+	justify-content: center;
+}
+
+.step__number {
+	font-size: 24px;
+	font-weight: bold;
+	color: #e30000;
+}
+
+.step__items {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.step__items img {
+	width: 100%;
+	height: auto;
+}
+
+.step__item-description {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 1024px) {
+	.step {
+		max-width: 45%;
+		/* 画面が狭くなったら2列に */
+	}
+}
+
+@media (max-width: 768px) {
+	.step-container {
+		flex-direction: column;
+		/* スマホでは縦並び */
+		align-items: center;
+	}
+
+	.step {
+		max-width: 100%;
+	}
+}

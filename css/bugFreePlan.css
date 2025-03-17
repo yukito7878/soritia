@@ -1,0 +1,60 @@
+.bugFreePlan{
+	width: 1200px;
+	margin: auto;
+}
+
+.bugFreePlanContainer {
+    width: 1200px; /* 親要素の幅を固定 */
+    margin: auto; /* 中央配置 */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4列レイアウト */
+    gap: 20px; /* カード間の余白 */
+    text-align: center;
+}
+
+.bugFreePlan-title{
+	display: flex;
+	justify-content: center;
+	font-size: 5rem;
+	margin-bottom: 20px;
+}
+
+.bugFreePlan-each {
+    background: #f8f8f8; /* 背景色 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.planName {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.planImg {
+    width: 250px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.plan-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #d00000;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+ul li {
+	margin: auto;
+    margin-bottom: 5px;
+	text-align: left;
+	width: 90%;
+	font-weight: bold;
+}

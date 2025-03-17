@@ -1,0 +1,89 @@
+section {
+	width: 1200px;
+	margin: auto;
+}
+
+
+.contact-text {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.contact-button {
+	display: inline-block;
+	margin-top: 10px;
+	padding: 10px 15px;
+	background: #e30000;
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.footer {
+	background: #222;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.footer-container {
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.footer-logo {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.footer-nav {
+	display: flex;
+	gap: 20px;
+}
+
+.footer-nav a {
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.footer-copyright {
+	margin-top: 10px;
+	font-size: 12px;
+	opacity: 0.7;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+	.footer-container {
+		flex-direction: column;
+		text-align: center;
+		gap: 10px;
+	}
+}
+
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+	.footer-content {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.footer-contact,
+	.footer-info {
+		text-align: center;
+	}
+
+	.contact-button {
+		width: 100%;
+		max-width: 250px;
+	}
+}

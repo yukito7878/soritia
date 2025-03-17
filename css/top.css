@@ -1,0 +1,15 @@
+.hero {
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+	/* 水平方向の中央配置 */
+	align-items: center;
+	/* 垂直方向の中央配置 */
+}
+
+.hero-topView {
+	display: block;
+	width: 1200px;
+	margin: auto;
+}

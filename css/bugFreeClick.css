@@ -1,0 +1,36 @@
+.bugFreeClick {
+	width: 1200px;
+	margin: auto;
+}
+
+.bugFreeClick-container {
+	width: 800px;
+	position: relative;
+	margin: 50px auto;
+	margin-top: 20px;
+}
+
+.bugFreeClick-clickButton {
+	display: block;
+	width: 100%;
+}
+
+.bugFreeButton {
+	width: 100%;
+}
+
+.bugFreeClick-hand {
+	position: absolute;
+	right: 14px;
+	top: 65%;
+	transform: translateY(-50%);
+	width: 120px;
+	height: auto;
+}
+
+.bugFreeClick-text {
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 0;
+	margin-left: 10px;
+}

@@ -1,0 +1,16 @@
+.consideration {
+    width: 100%; /* セクション全体を横幅いっぱいに */
+    display: flex;
+    justify-content: center; /* 水平方向に中央揃え */
+	background-color: #d9d9d9;
+}
+
+.consideration-container {
+    width: 1200px; /* コンテンツ幅を固定 */
+    display: flex;
+    justify-content: center; /* 画像を中央揃え */
+}
+
+.consideration-img {
+    width: 80%; /* 画像を適度に縮小 */
+}

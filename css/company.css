@@ -1,0 +1,109 @@
+/* 全体のスタイル */
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f9f9f9;
+}
+
+/* セクション全体のスタイル */
+.company-section {
+	padding: 40px 0px;
+	margin-top: 30px;
+	width: 100%;
+	background-color: #ffffff;
+}
+
+.section-title {
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+.section-subtitle {
+	text-align: center;
+	font-size: 1.5rem;
+	color: #555;
+	margin-bottom: 20px;
+}
+
+/* コンテナ */
+.container {
+	max-width: 850px;
+	/* 最大幅を1000pxに設定 */
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 0 10px;
+}
+
+/* 表のスタイル */
+.company-table {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: #ffffff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.company-table-container {
+	overflow-x: auto;
+	/* 横スクロールを有効化 */
+	width: 100%;
+	/* コンテナの幅を親要素に収める */
+}
+
+/* セルのスタイル */
+.company-table th,
+.company-table td {
+	padding: 10px;
+	border: 1px solid #ddd;
+	text-align: left;
+	white-space: normal;
+	/* 改行を許可 */
+	word-wrap: break-word;
+	/* 長い単語を折り返す */
+}
+
+/* ヘッダーセル */
+.company-table th {
+	background-color: #f0f0f0;
+	font-weight: bold;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 1000px) {
+
+	.company-table th,
+	.company-table td {
+		font-size: calc(8.5px + 0.5vw);
+		/* フォント縮小 */
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.section-title {
+		font-size: 20px;
+		/* タイトルの縮小 */
+	}
+
+	.section-subtitle {
+		font-size: 14px;
+		/* サブタイトルの縮小 */
+	}
+
+	.company-table {
+		font-size: 12px;
+		/* 表の文字サイズを縮小 */
+	}
+
+	/* セルのスタイル */
+	.company-table th,
+	.company-table td {
+		padding: 4px;
+	}
+}
+
+@media (max-width: 768px) {
+	.company-section {
+		padding: 40px 20px;
+	}
+}

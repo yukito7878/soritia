@@ -1,0 +1,237 @@
+.customer-reviews {
+	background-color: #f7f7f7;
+	padding: 2rem 1rem;
+}
+
+.review-container {
+	max-width: 1100px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.review-title {
+	font-size: 5rem;
+	font-weight: bold;
+	margin-bottom: 1.5rem;
+	margin-top:0;
+	color: black;
+}
+
+.content-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* レビューのスライダー */
+.review-slider {
+	position: relative;
+	flex: 1;
+	overflow: hidden;
+	width: 100%;
+	max-width: 800px;
+	/* デスクトップ用の最大幅 */
+}
+
+.review-track {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+}
+
+.review-item {
+	flex: 0 0 100%;
+	/* 1つのアイテムを全幅で表示 */
+	box-sizing: border-box;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	padding: 2.5rem;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 300px;
+}
+
+.review-item__title {
+	display: flex;
+	gap: 30px;
+	margin: auto;
+}
+
+.review-item__customer {
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	/* 画像を丸くする */
+	object-fit: cover;
+	/* 画像のアスペクト比を維持 */
+}
+
+.location {
+	font-weight: bold;
+	color: #555;
+	text-align: left;
+	margin-top: 2rem;
+}
+
+.review-heading {
+	font-size: 1.3rem;
+	font-weight: bold;
+	margin: 1rem 0;
+	color: black;
+}
+
+.review-stars {
+	color: #FFD700;
+	/* ゴールドに近い黄色 */
+	font-size: inherit;
+}
+
+.review-text {
+	font-size: 1.2rem;
+	color: #333;
+}
+
+/* ボタンのデザイン変更 */
+.slider-button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(128, 128, 128, 0.5);
+	/* 透明な灰色 */
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.slider-button:hover {
+	background-color: rgba(128, 128, 128, 0.8);
+}
+
+/* 表示幅調整 */
+.review-item {
+	flex: 0 0 100%;
+	/* 全幅を1つのアイテムに割り当てる */
+}
+
+/* 右セクションとスライダーの間隔調整 */
+.slider-button.prev {
+	left: -1px;
+}
+
+.slider-button.next {
+	right: -1px;
+}
+
+/* 右セクションとの間隔を広げる */
+.content-wrapper {
+	column-gap: 3rem;
+	/* gapを広げる */
+}
+
+/* テキストとボタン部分 */
+.review-extra {
+	flex: 0 0 35%;
+	text-align: left;
+}
+
+.thank-you {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+.contact-button {
+	display: inline-block;
+	background-color: #ff6600;
+	color: #fff;
+	padding: 0.8rem 1.2rem;
+	border: none;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 1rem;
+	cursor: pointer;
+	margin-bottom: 1rem;
+}
+
+.disclaimer {
+	font-size: 0.8rem;
+	color: #666;
+	line-height: 1.4;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+	.content-wrapper {
+		display: flex;
+		flex-direction: column;
+		/* 縦並びに変更 */
+		align-items: center;
+		gap: 2rem;
+		/* 縦方向の間隔を広げる */
+	}
+
+	.review-slider {
+		max-width: 100%;
+		/* スライダーを全幅に拡大 */
+	}
+
+	.review-item {
+		padding: 1.5rem;
+		/* モバイル向けにパディングを調整 */
+		min-height: 250px;
+		/* 最小高さを調整 */
+	}
+
+	.review-item__customer {
+		width: 100px;
+		height: 100px;
+	}
+
+	.location {
+		margin-top: 0.5rem;
+	}
+
+	.review-heading {
+		margin: o.5rem 0;
+	}
+
+
+	.review-extra {
+		width: 100%;
+		/* 右セクションを全幅に広げる */
+		text-align: center;
+		/* 中央揃え */
+	}
+
+	.thank-you {
+		font-size: 1.2rem;
+		/* モバイルで見やすいサイズ */
+		margin: 0.3rem auto;
+	}
+
+	.contact-button {
+		width: 100%;
+		/* ボタンを全幅に */
+		max-width: 300px;
+		/* ボタンの最大幅を設定 */
+		margin: 0.3rem auto;
+	}
+
+	.disclaimer {
+		font-size: 0.8rem;
+		/* 小さな画面用にフォントサイズ調整 */
+	}
+
+	.slider-button {
+		width: 30px;
+		height: 30px;
+		/* ボタンも小型化 */
+	}
+}
