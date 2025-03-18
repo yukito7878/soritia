@@ -92,6 +92,8 @@ body {
 
 	.company-table {
 		font-size: 12px;
+		width: 80%;
+		margin: auto;
 		/* 表の文字サイズを縮小 */
 	}
 
@@ -99,11 +101,5 @@ body {
 	.company-table th,
 	.company-table td {
 		padding: 4px;
-	}
-}
-
-@media (max-width: 768px) {
-	.company-section {
-		padding: 40px 20px;
 	}
 }

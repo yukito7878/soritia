@@ -86,10 +86,16 @@
 }
 
 @media (max-width: 768px) {
+	.step-title{
+		padding: 20px 0;
+		width: 100%;
+	}
+	
 	.step-container {
 		flex-direction: column;
 		/* スマホでは縦並び */
 		align-items: center;
+		width: 95%;
 	}
 
 	.step {

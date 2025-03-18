@@ -40,8 +40,6 @@
 	.bugFreeClick {
 		width: 100%;
 		/* 画面幅に合わせる */
-		padding: 0 20px;
-		/* 余白を追加 */
 	}
 
 	.bugFreeClick-container {
@@ -87,7 +85,7 @@
 		width: 80px;
 		/* 手の画像をさらに小さく */
 		right: 5px;
-		top: 55%;
+		top: 68%;
 		/* 位置を調整 */
 	}
 }

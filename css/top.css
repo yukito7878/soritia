@@ -13,3 +13,10 @@
 	width: 1200px;
 	margin: auto;
 }
+
+/* スマホ対応（768px以下） */
+@media (max-width: 768px) {
+	.hero-topView{
+		width: 100%;
+	}
+}

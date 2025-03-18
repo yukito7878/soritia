@@ -28,12 +28,13 @@
 	/* 背景色 */
 	padding: 20px;
 	border-radius: 10px;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .planName {
-	font-size: 20px;
+	font-size: 30px;
 	font-weight: bold;
+	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
@@ -44,10 +45,11 @@
 }
 
 .plan-price {
-	font-size: 22px;
+	font-size: 32px;
 	font-weight: bold;
 	color: #d00000;
 	margin-bottom: 10px;
+	margin-top: 20px;
 }
 
 ul {
@@ -67,10 +69,8 @@ ul li {
 /* タブレット対応（1024px以下） */
 @media (max-width: 1024px) {
 	.bugFreePlan {
-		width: 100%;
+		width: 95%;
 		/* 幅を画面いっぱいに */
-		padding: 0 20px;
-		/* 余白を追加 */
 	}
 
 	.bugFreePlanContainer {
@@ -86,10 +86,6 @@ ul li {
 		/* タイトルを少し小さく */
 	}
 
-	.planImg {
-		width: 200px;
-		/* 画像を小さく */
-	}
 }
 
 /* スマホ対応（768px以下） */
@@ -105,10 +101,10 @@ ul li {
 		font-size: 3rem;
 		/* タイトルをさらに小さく */
 	}
-
-	.planImg {
-		width: 180px;
-		/* 画像をさらに小さく */
+	
+	ul{
+		width: 70%;
+		margin: auto;
 	}
 
 	ul li {
