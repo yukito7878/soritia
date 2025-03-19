@@ -8,7 +8,7 @@ body {
 /* セクション全体のスタイル */
 .company-section {
 	padding: 40px 0px;
-	margin-top: 30px;
+	margin-top: 10px;
 	width: 100%;
 	background-color: #ffffff;
 }
@@ -92,7 +92,7 @@ body {
 
 	.company-table {
 		font-size: 12px;
-		width: 80%;
+		width: 90%;
 		margin: auto;
 		/* 表の文字サイズを縮小 */
 	}
